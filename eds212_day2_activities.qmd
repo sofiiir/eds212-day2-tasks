@@ -41,7 +41,7 @@ library(tidyr)
 
 ggplot( data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
   geom_point(aes(color = species)) +
-  scale_color_manual(values = c("pink", "forestgreen", "navy"))
+  scale_color_manual(values = c("hotpink", "forestgreen", "navy")) +
   labs(x = "Bill length (mm)",
        y = "Bill depth (mm)",
        title = "Palmer penguins bill depth and length",
@@ -55,7 +55,7 @@ library(tidyr)
 
 ggplot( data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_jitter(aes(color = species)) +
-  scale_color_manual(values = c("pink", "forestgreen", "navy")) +
+  scale_color_manual(values = c("hotpink", "forestgreen", "navy")) +
   labs(x = "Species",
        y = "Flipper length (mm)",
        title = "Palmer penguins flipper length",
