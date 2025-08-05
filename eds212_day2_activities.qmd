@@ -10,3 +10,28 @@ library(tidyr)
 library(palmerpenguins)
 ```
 
+```{r}
+#create an expression
+ fx <- expression(x^2)
+
+#find the derivative
+ df_dx <- D(expr = fx, name = "x")
+
+#run at x=3
+ x <- 3
+eval(df_dx)
+ 
+```
+
+```{r}
+#expression
+fa <- expression(2 * (3 * a +2)^4 - 5)
+
+#find the derivative
+df_da <- D(expr = fa, name = "a")
+
+#run at a = 1.2
+a <- 1.2
+eval(df_da)
+```
+
