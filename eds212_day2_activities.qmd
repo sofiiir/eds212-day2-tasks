@@ -1,0 +1,12 @@
+---
+title: "day2-tasks"
+format: html
+editor: visual
+---
+
+```{r}
+library(ggplot2)
+library(tidyr)
+library(palmerpenguins)
+```
+
