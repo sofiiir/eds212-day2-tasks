@@ -42,8 +42,8 @@ library(tidyr)
 ggplot( data = penguins, aes(x = bill_length_mm, y = bill_depth_mm)) +
   geom_point(aes(color = species)) +
   scale_color_manual(values = c("hotpink", "forestgreen", "navy")) +
-  labs(x = "Bill length (mm)",
-       y = "Bill depth (mm)",
+  labs(x = "Bill Length (mm)",
+       y = "Bill Depth (mm)",
        title = "Palmer penguins bill depth and length",
        subtitle = "Palmer archipeligo, Antartica (2007 - 2009)",
        caption = "Collected by Dr. Kristen Gorman")
@@ -57,7 +57,7 @@ ggplot( data = penguins, aes(x = species, y = flipper_length_mm)) +
   geom_jitter(aes(color = species)) +
   scale_color_manual(values = c("hotpink", "forestgreen", "navy")) +
   labs(x = "Species",
-       y = "Flipper length (mm)",
+       y = "Flipper Length (mm)",
        title = "Palmer penguins flipper length",
        subtitle = "Palmer archipeligo, Antartica (2007 - 2009)",
        caption = "Collected by Dr. Kristen Gorman")
